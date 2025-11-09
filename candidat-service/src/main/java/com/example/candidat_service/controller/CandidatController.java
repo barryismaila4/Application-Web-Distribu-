@@ -5,6 +5,7 @@ import com.example.candidat_service.entity.Candidat;
 import com.example.candidat_service.service.CandidatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -82,4 +83,6 @@ public class CandidatController {
     public String welcome() {
         return welcomeMessage;
     }
+
+
 }

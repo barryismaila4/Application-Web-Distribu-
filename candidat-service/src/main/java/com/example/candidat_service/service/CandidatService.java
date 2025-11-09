@@ -6,6 +6,7 @@ import com.example.candidat_service.dto.JobDTO;
 import com.example.candidat_service.entity.Candidat;
 import com.example.candidat_service.repository.CandidatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -77,4 +78,6 @@ public class CandidatService {
         candidat.getFavoriteJobIds().remove(jobId);
         candidatRepository.save(candidat);
     }
+
+
 }
